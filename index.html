@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>2015年前端开发组年度总结</title>
+		<title>三大前端框架介绍及对比</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/moon.css" id="theme">
+		<link rel="stylesheet" href="css/theme/league.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -41,165 +41,474 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>前端开发组</h1>
-					<h3>2015年度总结</h3>
+					<h2>前端框架介绍及比较</h2>
+					<h3>angularjs1 vs angularjs2 vs reactjs</h3>
 					<p>
 						<small>Created by <a href="http://github.com/zhangbg">zhangbiaoguang</a></small>
 					</p>
 				</section>
-                
-                <section>
-					<h2>自我介绍</h2>
-					<p>
-						大家好，我是张标光，来自广东湛江，自2010年6月出道，从事过前端、后端、数据库等工作，目前主要从事前端方面的开发，题外话，现还未婚！
-					</p>
-				</section>
-                
-                <section>
-					<section id="fragments">
-						<h2>前端人员的角色</h2>
-						<p>FAAS...</p>
-						<p class="fragment">... 这是什么鬼 ...</p>
-						<p><span class="fragment">... Frontend</span> <span class="fragment">as</span> <span class="fragment">a</span> <span class="fragment">service...</span></p>
-                        <p class="fragment">... It's metaphor, just like SAAS.</p>
-					</section>
-				</section>
-                
-                <section>
+
+				<section>
 					<section>
-						<h2>前端开发组成员</h2>
-                        <p>1 - 2 - 5</p>
-                        <!-- <p><span class="fragment">1</span> <span class="fragment">-2</span> <span class="fragment">-5</span></p> -->
+						<h2>1 angularjs1</h2>
 						<br>
                         <a href="#" class="navigate-down">
                             <img width="178" height="238" data-src="image/arrow.png" alt="Down arrow">
                         </a>
 					</section>
 					<section>
-						<h4>张标光</h4>
-						<img width="440" height="540" data-src="image/zhangbiaoguang.jpg" alt="Down arrow">
+						<h3>1.1 what's angularJS?</h3>
+						<p class="fragment">AngularJS是一个MVW框架，它不是一个library!</p>
+						<p class="fragment">client-side的解决方案</p>
+						<p class="fragment">解耦性（html和逻辑，前后端）</p>
+						<p class="fragment">跨浏览器</p>
+						<p class="fragment">可扩展</p>
+						<p class="fragment">可测试</p>
 					</section>
 					<section>
-						<h4>娄文康</h4>
-						<img width="440" height="540" data-src="image/louwenkang.jpg" alt="Down arrow">
+						<h3>1.2 Features</h3>
+						<p class="fragment">Module</p>
+						<p class="fragment">Dependency Injection</p>
+						<p class="fragment">Two way Data Binding</p>
+						<p class="fragment">Directives</p>
+						<p class="fragment">Components && Component Route(1.5)</p>
+						<p class="fragment">Form varidation</p>
+						<p class="fragment">Filters/Controllers/Services/Promise</p>
 					</section>
 					<section>
-						<h4>谢基颜</h4>
-						<img width="440" height="540" data-src="image/xiejiyan.jpg" alt="Down arrow">
+						<img data-src="image/angularjs1_features.png">
 					</section>
 					<section>
-						<h4>张景</h4>
-						<img width="440" height="540" data-src="image/zhangjing.jpg" alt="Down arrow">
+						<h3>1.3 DEMO</h3>
+						<img style="max-width:90%;" data-src="image/angularjs1_demo_1.png">
 					</section>
 					<section>
-						<h4>谭淑仪</h4>
-						<img width="440" height="540" data-src="image/tanshuyi.jpg" alt="Down arrow">
+						<img data-src="image/angularjs1_demo_2.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs_theory.png" style="width:65%;">
+					</section>
+					<section>
+						<h3>1.4 Advantages and Disadvantages</h3>
+						<br>
+						<h4>优点</h4>
+						<ol style="width: 58%;">
+							<li>非常适合Single page Application</li>
+							<li>致力于CRUD的应用</li>
+							<li>双向的数据绑定</li>
+							<li>提倡模块化且提供单元测试</li>
+							<li>依赖注入（很好的解耦和模块化）</li>
+							<li>提供可重用的组件</li>
+							<li>强大的社区支持及完善的官方文档</li>
+						</ol>
+					</section>
+					<section>
+						<h4>缺点</h4>
+						<ol style="width: 32%;">
+							<li>性能问题</li>
+							<li>学习曲线比较陡峭</li>
+							<li>复杂且调试困难</li>
+						</ol>
 					</section>
 				</section>
-                
-                <section>
+
+				<section>
 					<section>
-                        <h2>2015年工作内容</h2>
-                        <br>
-                        <br>
+						<h2>2 angularjs2</h2>
+						<br>
                         <a href="#" class="navigate-down">
                             <img width="178" height="238" data-src="image/arrow.png" alt="Down arrow">
                         </a>
 					</section>
-                    <section>
-                        <h3>张标光</h3>
-                        <ol>
-                            <li class="fragment">GDP:SQL查询、仪表盘、查询构造器、OLAP、CUBE建模、权限管理</li>
-                            <li class="fragment">commoncharts报表库、数据库可视化平台</li>
-                            <li class="fragment">工具及插件：自定义form表单插件、简易OLAP框架DEMO、用户画像原型系统等</li>
-                            <li class="fragment">推荐引擎系统</li>
-                        </ol>
-                    </section>
-                    <section>
-                        <h3>娄文康</h3>
-                        <ol>
-                            <li class="fragment">Hadoop Manager</li>
-                            <li class="fragment">UDMP</li>
-                            <li class="fragment">DataDock</li>
-                            <li class="fragment">语料训练系统</li>
-                            <li class="fragment">TVD DEMO</li>
-                            <li class="fragment">GDP的部分小功能和维护</li>
-                        </ol>
-                    </section>
+					<section>
+						<h3>2.1 what's angularJS2?</h3>
+						<p class="fragment">SPEED & PERFORMANCE</p>
+						<p class="fragment">SIMPLE & EXPRESSIVE</p>
+						<p class="fragment">CROSS PLATFORM</p>
+						<p class="fragment">FLEXIBLE DEVELOPMENT</p>
+						<p class="fragment">COMPREHENSIVE ROUTING</p>
+						<p class="fragment">DEPENDENCY INJECTION</p>
+						<p class="fragment">LEGACY BROWSER SUPPORT(IE9+)</p>
+						<p class="fragment">ANIMATIONS & INTERNATIONALIZATION (I18N) & ACCESSIBILITY</p>
+					</section>
+					<section>
+						<h3>2.2 Features</h3>
+						<p class="fragment">Angular2 has no Controllers, No Two-Way data-binding, No more $scope</p>
+						<p class="fragment">Written in TypeScript</p>
+						<p class="fragment">Attribute Directive</p>
+						<p class="fragment">Component Styles</p>
+						<p class="fragment">Hierachicial injectors</p>
+						<p class="fragment">HttpClient(移除了jqlite)</p>
+						<p class="fragment">Routing & navigation</p>
+						<p class="fragment">Pipes(filter)</p>
+						<p class="fragment">Testing</p>
+					</section>
+					<section>
+						<img data-src="image/angularjs2_features1.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs2_features2.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs2_features3.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs2_features4.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs2_features5.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs2_features6.png">
+					</section>
+					<section>
+						<h3>2.3 DEMO</h3>
+						<img data-src="image/angularjs2_demo_page1.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs2_demo_page2.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs2_demo_page3.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs2_demo_page4.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs2_demo_page5.png">
+					</section>
+					<section>
+						<img data-src="image/angularjs2_demo_page6.png">
+					</section>
+					<section>
+						<h3>2.4 Advantages and Disadvantages</h3>
+						<br>
+						<h4>优点</h4>
+						<ol style="width: 58%;">
+							<li>拥抱web compent方式编程，立足于未来。</li>
+							<li>Faster and modern browsers</li>
+							<li>cross platform</li>
+							<li>best performance</li>
+							<li>强大的routing及component</li>
+							<li>Designed for the future</li>
+						</ol>
+					</section>
+					<section>
+						<h4>缺点</h4>
+						<ol style="width: 50%;">
+							<li>拥抱web compent方式编程，立足于未来。</li>
+							<li>入门要求高</li>
+							<li>开发中</li>
+						</ol>
+					</section>
 				</section>
-                
+
+				<section>
+					<section>
+						<h2>3 reactjs</h2>
+						<br>
+                        <a href="#" class="navigate-down">
+                            <img width="178" height="238" data-src="image/arrow.png" alt="Down arrow">
+                        </a>
+					</section>
+					<section>
+						<h3>3.1 what's reactJs?</h3>
+						<blockquote style="font-style: normal;width: 100%;text-align: left;">
+							&ldquo;
+	                           React is a library for building composable user interfaces. It encourages the creation of reusable UI components which present data that changes over time. Lots of people use React as the V in MVC. React abstracts away the DOM from you, giving a simpler programming model and better performance. React can also render on the server using Node, and it can power native apps using React Native. React implements one-way reactive data flow which reduces boilerplate and is easier to reason about than traditional data binding.
+	                        &rdquo;
+						</blockquote>
+					</section>
+					<section>
+						<h3>3.2 Features</h3>
+						<p class="fragment">Components & React elements</p>
+						<p class="fragment">The Virtual DOM</p>
+						<p class="fragment">JSX</p>
+						<p class="fragment">Rendering</p>
+						<p class="fragment">Props & State</p>
+						<p class="fragment">Specs, Lifecycle, Events</p>
+						<p class="fragment">Composition</p>
+						<p class="fragment">One way DataFlow & Flux</p>
+					</section>
+					<section>
+						<h3>3.3 DEMO</h3>
+						<img style="max-width:70%;" data-src="image/reactjs_demo_page1.png">
+					</section>
+					<section style="width:110%">
+						<p>When the component's button is clicked, is called</p>
+						<p class="fragment">The state is changed</p>
+						<p class="fragment">React re-renders the component to the virtual DOM</p>
+						<p class="fragment">The new virtual DOM is compared with the previous virtual DOM</p>
+						<p class="fragment">React isolates what has changed and updates the browser DOM</p>
+					</section>
+					<section>
+						<img style="width:50%" data-src="image/reactjs_demo_page2.png">
+					</section>
+					<section>
+						<h3>1.4 Advantages and Disadvantages</h3>
+						<br>
+						<h4>优点</h4>
+						<ol style="width: 60%;">
+							<li>高性能</li>
+							<li>跨平台使用</li>
+							<li>客户端和服务器端都可以使用</li>
+							<li>容易调试、测试、可读性和维护性高</li>
+							<li>能够容易结合其他框架使用</li>
+						</ol>
+					</section>
+					<section>
+						<h4>缺点</h4>
+						<ol style="width: 60%;">
+							<li>使用JSX</li>
+							<li>库不是框架，需要自己考虑其他功能，如路由</li>
+						</ol>
+					</section>
+				</section>
+
                 <section>
-					<h2>2016年工作计划</h2>
-					<table style="font-size:30px;">
-						<thead>
-							<tr>
-								<th>具体项目</th>
-								<th>开发人员</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>GDP</td>
-								<td>张标光</td>
-							</tr>
-							<tr>
-								<td>GDP HBase Browser</td>
-								<td>谭淑仪</td>
-							</tr>
-							<tr>
-								<td>UDMP</td>
-								<td>娄文康、张景</td>
-							</tr>
-							<tr>
-								<td>Hadoop Manager</td>
-								<td>娄文康、张景</td>
-							</tr>
-							<tr>
-								<td>推荐引擎</td>
-								<td>张标光</td>
-							</tr>
-							<tr>
-								<td>GOD国双运维系统</td>
-								<td>谢基颜</td>
-							</tr>
-							<tr>
-								<td>GDP 机器学习工具箱</td>
-								<td>张标光</td>
-							</tr>
-							<tr>
-								<td>可视化平台</td>
-								<td>张标光</td>
-							</tr>
-							<tr>
-								<td>域名标签系统2.0</td>
-								<td>谭淑仪</td>
-							</tr>
-							<tr>
-								<td>EDP</td>
-								<td>张景</td>
-							</tr>
-						</tbody>
-					</table>
+					<section>
+						<h2>4 Compare</h2>
+						<p>三者比较是不平等的</p>
+						<br>
+                        <a href="#" class="navigate-down">
+                            <img width="178" height="238" data-src="image/arrow.png" alt="Down arrow">
+                        </a>
+					</section>
+					<section>
+						<h3>4.1 basic</h3>
+						<table class="table" style="width:115%;">
+							<thead>
+								<tr>
+									<th>Attribute</th>
+									<th>AngularJS</th>
+									<th>Angular 2</th>
+									<th>React</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><em>Version</em></td>
+									<td>1.5.7</td>
+									<td>2.0.0-beta.15</td>
+									<td>15.0.1</td>
+								</tr>
+								<tr>
+									<td><em>Author</em></td>
+									<td>Google</td>
+									<td>Google</td>
+									<td>Facebook</td>
+								</tr>
+								<tr>
+									<td><em>Language</em></td>
+									<td>JavaScript/HTML</td>
+									<td>TypeScript</td>
+									<td>JSX</td>
+								</tr>
+								<tr>
+									<td><em>Size</em></td>
+									<td>154k</td>
+									<td>583k</td>
+									<td>143k</td>
+								</tr>
+								<tr>
+									<td><em>Github Stars</em></td>
+									<td>48.8k</td>
+									<td>11k</td>
+									<td>41k</td>
+								</tr>
+								<tr>
+									<td><em>Github Contributors</em></td>
+									<td>1,452</td>
+									<td>224</td>
+									<td>669</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>4.2 The Meta Stuff</h3>
+						<table class="table" style="width:120%;">
+							<thead>
+								<tr>
+									<th>Attribute</th>
+									<th>AngularJS</th>
+									<th>Angular 2</th>
+									<th>React</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><em>Churn</em></td>
+									<td>Reduced</td>
+									<td>Reduced</td>
+									<td>High</td>
+								</tr>
+								<tr>
+									<td><em>Tooling</em></td>
+									<td>Low</td>
+									<td>High</td>
+									<td>High</td>
+								</tr>
+								<tr>
+									<td><em>Code Design</em></td>
+									<td>JS into HTML</td>
+									<td>JS into HTML</td>
+									<td>JavaScript Centric</td>
+								</tr>
+								<tr>
+									<td><em>JavaScript “Fatigue”</em></td>
+									<td>Less</td>
+									<td>Less</td>
+									<td>More</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h3>4.3 The Other Information</h3>
+						<table class="table" style="width: 130%;margin-left: -10%;">
+							<thead>
+								<tr>
+									<th>Attribute</th>
+									<th>AngularJS</th>
+									<th>Angular 2</th>
+									<th>React</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><em>DOM</em></td>
+									<td>Regular DOM</td>
+									<td>Regular DOM</td>
+									<td>Virtual DOM</td>
+								</tr>
+								<tr>
+									<td><em>Learning Curve</em></td>
+									<td>High</td>
+									<td>Medium</td>
+									<td>Low</td>
+								</tr>
+								<tr>
+									<td><em>Packaging</em></td>
+									<td>Weak</td>
+									<td>Medium</td>
+									<td>Strong</td>
+								</tr>
+								<tr>
+									<td><em>Abstraction</em></td>
+									<td>Weak</td>
+									<td>Strong</td>
+									<td>Strong</td>
+								</tr>
+								<tr>
+									<td><em>Debugging General</em></td>
+									<td>Good HTML / Bad JS</td>
+									<td>Good JS/Good HTML</td>
+									<td>Good JS / Bad HTML</td>
+								</tr>
+								<tr>
+									<td><em>Debug Line NO</em></td>
+									<td>No</td>
+									<td>No</td>
+									<td>Yes</td>
+								</tr>
+								<tr>
+									<td><em>Unclosed Tag Mentioned?</em></td>
+									<td>No</td>
+									<td>No</td>
+									<td>Yes</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<table style="width: 130%;margin-left: -10%;">
+							<thead>
+								<tr>
+									<th>Attribute</th>
+									<th>AngularJS</th>
+									<th>Angular 2</th>
+									<th>React</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><em>Fails When?</em></td>
+									<td>Runtime</td>
+									<td>Runtime</td>
+									<td>Compile-Time</td>
+								</tr>
+								<tr>
+									<td><em>Binding</em></td>
+									<td>2 Way</td>
+									<td>2 Way</td>
+									<td>Uni-Directional</td>
+								</tr>
+								<tr>
+									<td><em>Templating</em></td>
+									<td>In HTML</td>
+									<td>In TypeScript Files</td>
+									<td>In JSX Files</td>
+								</tr>
+								<tr>
+									<td><em>Component Model</em></td>
+									<td>Weak</td>
+									<td>Strong</td>
+									<td>Medium</td>
+								</tr>
+								<tr>
+									<td><em>Building Mobile?</em></td>
+									<td>Ionic Framework</td>
+									<td>Ionic Framework</td>
+									<td>React Native</td>
+								</tr>
+								<tr>
+									<td><em>MVC</em></td>
+									<td>Yes</td>
+									<td>Yes</td>
+									<td>View Layer Only</td>
+								</tr>
+								<tr>
+									<td><em>Rendering</em></td>
+									<td>Client Side</td>
+									<td>Server Side</td>
+									<td>Server Side</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>5 In my word</h2>
+						<p class="fragment" style="text-align:left;">1、如果项目是SPA应用，主要是CRUD的操作，只需要建立个web应用，业务逻辑复杂，需要一个强有力的框架介入，建议使用angularJS1；</p>
+						<p class="fragment" style="text-align:left;">2、如果项目是需要考虑性能、跨终端、业务逻辑不太复杂、服务器端渲染，或者是想要在旧项目引入来增强功能，建议使用reactjs;</p>
+						<p class="fragment" style="text-align:left;">3、由于angularJS2目前处于开发状态，而且拥抱的是标准的web component方式编程（立足于未来），暂时建议采取观望模式；</p>
+					</section>
 				</section>
 
                 <section>
 					<h2>感言</h2>
-					<blockquote style="font-style: normal;">
+					<blockquote style="font-style: normal; width:77%;">
 						&ldquo;
-                           很高兴也很荣幸能够成为公司的一员，愿公司的业绩蒸蒸日上，明天越发美好！
+                           没有永恒的框架，只有永远需要实现的需求
+                        &rdquo;
+					</blockquote>
+
+					<blockquote class="fragment" style="font-style: normal; width:100%;">
+						&ldquo;
+						技术都是为业务服务，业务一直都有，但是技术就是会更新换代，目前前端技术就到了应接不暇的程度。
+						不用太迷信某个框架，尤其是目前这些流行的框架，到底解决了全球多少前端的需求呢，可能 1% 都不到。
+						选择技术或者是框架，更多的应该看看能不能提高生产力，能提高多少，随着技术的演进，现在选择了这个技术，未来迁移的成本有多大？技术、需求、产品都有时效性，到时间了自然都会被淘汰。
                         &rdquo;
 					</blockquote>
 				</section>
-                
+
 				<section style="text-align: left;">
 					<h1>Thanks</h1>
-					<p class="fragment">
-						- Happy new year
-					</p>
 				</section>
-
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
